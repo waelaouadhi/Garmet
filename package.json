@@ -1,8 +1,9 @@
 {
-  "name": "mld",
+  "name": "garmet",
+  
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mld.ng/",
+  "homepage": "https://garmet.tn",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.16.1",

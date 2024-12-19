@@ -6,8 +6,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        garmetGreen: '#0B4551', // Light mode color
-        garmetYellow: '#E5FC31', // Dark mode color
+        garmetGreen: '#0B4551',
+        garmetYellow: '#E5FC31',
+      },
+      animation: {
+        'slide-left': 'slide-left 20s linear infinite',
+      },
+      keyframes: {
+        'slide-left': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
     },
   },

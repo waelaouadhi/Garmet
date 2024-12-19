@@ -66,7 +66,7 @@ function App() {
   return (
     <div>
       <button onClick={toggleDarkMode}>
-        Toggle Dark Mode
+        
       </button>
       <button onClick={toggleLanguage}>
         {currentTranslation ? currentTranslation.toggleLanguage : 'Switch Language'}

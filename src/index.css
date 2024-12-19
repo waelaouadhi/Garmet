@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
@@ -20,4 +21,40 @@ body {
 
 .cta {
   background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://plus.unsplash.com/premium_photo-1663045990033-35c6e6bfc22e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) fixed center center;
+}
+
+/* Animation for sliding logos from left to right */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Client carousel container (overflow hidden) */
+.client-carousel {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+}
+
+/* Client logos styling with original size */
+.client-carousel img {
+  height: auto; /* Allow the image to maintain its original size */
+  width: auto;
+  max-height: 20rem; /* Set maximum height to maintain size consistency */
+  max-width: 100%; /* Ensure it doesn't overflow */
+  margin-right: 11rem; /* Spacing between logos */
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.client-carousel img:hover {
+  opacity: 2; /* Hover effect to highlight logos */
+}
+
+/* Sliding animation for clients */
+.animate-slide-left {
+  animation: slideFromLeft 5s ease-in-out infinite;
 }

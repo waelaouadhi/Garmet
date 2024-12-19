@@ -3,7 +3,7 @@ import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
 import axios from 'axios';
-// import emailjs from 'emailjs-com';
+ import emailjs from 'emailjs-com';
 import Notiflix from 'notiflix';
 
 const DemoProduct = (props) => {
@@ -56,22 +56,22 @@ const DemoProduct = (props) => {
         fData.append('message', message)
         fData.append('products', demoProducts)
 
-        // emailjs.sendForm('service_7uy4ojg', 'template_et9wvdg', e.target, 'user_uE0bSPGbhRTmAF3I2fd3s')
-        //   .then((result) => {
-        //       console.log(result.text);
-        //       Notiflix.Report.success(
-        //         'Success',
-        //         '"Thanks for sending a message, we\'ll be in touch soon."',
-        //         'Okay',
-        //         );
-        //   }, (error) => {
-        //       console.log(error.text);
-        //       Notiflix.Report.failure(
-        //         'An error occured',
-        //         'Please try sending the message again.',
-        //         'Okay',
-        //         );
-        //   });
+         emailjs.sendForm('service_4aqduqa', 'template_2utpoje', e.target, 'user_lKiVJnZ7PrzsYvkHK')
+           .then((result) => {
+               console.log(result.text);
+               Notiflix.Report.success(
+                 'Success',
+                '"Thanks for sending a message, we\'ll be in touch soon."',
+                 'Okay',
+                 );
+           }, (error) => {
+               console.log(error.text);
+               Notiflix.Report.failure(
+                 'An error occured',
+                 'Please try sending the message again.',
+                 'Okay',
+                 );
+           });
 
         axios({
             method: "post",
@@ -130,7 +130,7 @@ const DemoProduct = (props) => {
                                     className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-garmetGreen h-4 w-4 rounded" 
                                     value="business_management_system" onChange={handleChange}
                                  />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Business Management System</label>
+                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Alimentations Sans Interruption (ASI)</label>
                             </div>
                             <div className="flex items-center my-4">
                                 <input 
@@ -140,7 +140,7 @@ const DemoProduct = (props) => {
                                     className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
                                     value="school_management_portal" onChange={handleChange}
                                     />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">School Management Portal</label>
+                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Composants électroniques et modules de puissance</label>
                             </div>
                             <div className="flex items-center my-4">
                                 <input 
@@ -150,18 +150,9 @@ const DemoProduct = (props) => {
                                     className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" 
                                     value="payroll_management_system" onChange={handleChange}
                                 />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Payroll Management System</label>
+                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Automates programmables industriels (API) et modules associés</label>
                             </div>
-                            <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
-                                    value="event_management_system" onChange={handleChange}
-                                />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Event Management System</label>
-                            </div>
+                            
                             {errors && 
                                 <p className="text-red-500 text-sm">{errors.products}</p>
                             }

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import Image from '../images/image.png'; // Correct path to the image file
+
+// Import images from the src/images folder
+import alimImage from '../images/alim.jpeg';
+import compelecImage from '../images/compelec.jpeg';
+import stmImage from '../images/stm.jpg';
 
 const Portfolio = () => {
     const [openPopup, setOpenPopup] = useState(false);
@@ -25,23 +29,24 @@ const Portfolio = () => {
                 </div>
 
                 <div className="px-4" data-aos="fade-down" data-aos-delay="600">
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 justify-center items-center">
                         {/* Card 1 */}
-                        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
                             <a href="#">
-                                <img className="rounded-t-lg" src={Image} alt="Business Management System" />
+                                <img className="rounded-t-lg" src={alimImage} alt="Business Management System" />
                             </a>
                             <div className="p-5">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                                Products 1
+                                    Alimentations Sans Interruption (ASI)
                                 </h5>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis hac eros nec ligula dolor nibh nibh. Fermentum conubia purus placerat penatibus ornare fermentum ante. Fringilla massa varius felis feugiat montes. Habitant sapien mauris                                </p>
+                                    Nous distribuons des ASI haute performance des marques Socomec et AEC, en monophasé ou triphasé, allant de 6 kVA à 300 kVA. Elles assurent une protection fiable contre les coupures de courant. Nos ASI garantissent la continuité d’alimentation pour vos installations critiques.
+                                </p>
                                 <button
                                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                     onClick={() =>
                                         handleOpenPopup(
-                                            Image,
+                                            alimImage,
                                             'Business Management System',
                                             'All data is stored in the cloud and as such it is easily accessible from all devices and from any location.'
                                         )
@@ -68,21 +73,22 @@ const Portfolio = () => {
                         </div>
 
                         {/* Card 2 */}
-                        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
                             <a href="#">
-                                <img className="rounded-t-lg" src={Image} alt="Marketing Automation" />
+                                <img className="rounded-t-lg" src={compelecImage} alt="Marketing Automation" />
                             </a>
                             <div className="p-5">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                                Products 2
+                                    Composants électroniques et modules de puissance
                                 </h5>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis hac eros nec ligula dolor nibh nibh. Fermentum conubia purus placerat penatibus ornare fermentum ante. Fringilla massa varius felis feugiat montes. Habitant sapien mauris                                </p>
+                                    Nous proposons une large gamme de composants électroniques et de modules de puissance pour divers systèmes industriels. Nos produits garantissent la performance et la fiabilité de vos équipements électroniques.
+                                </p>
                                 <button
                                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                     onClick={() =>
                                         handleOpenPopup(
-                                            Image,
+                                            compelecImage,
                                             'Marketing Automation',
                                             'Streamline your marketing efforts with automated workflows and analytics.'
                                         )
@@ -109,64 +115,24 @@ const Portfolio = () => {
                         </div>
 
                         {/* Card 3 */}
-                        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
                             <a href="#">
-                                <img className="rounded-t-lg" src={Image} alt="E-Commerce Platform" />
+                                <img className="rounded-t-lg" src={stmImage} alt="E-Commerce Platform" />
                             </a>
                             <div className="p-5">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                                Products 3
+                                    Automates programmables industriels (API) et modules associés
                                 </h5>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis hac eros nec ligula dolor nibh nibh. Fermentum conubia purus placerat penatibus ornare fermentum ante. Fringilla massa varius felis feugiat montes. Habitant sapien mauris                                </p>
+                                    Nous proposons des automates programmables industriels (API) et leurs modules associés pour l’automatisation de vos processus industriels. Nos solutions couvrent tous les besoins, des systèmes simples aux configurations complexes, pour optimiser vos processus de production.
+                                </p>
                                 <button
                                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                     onClick={() =>
                                         handleOpenPopup(
-                                            Image,
+                                            stmImage,
                                             'E-Commerce Platform',
                                             'Expand your business with a scalable online store.'
-                                        )
-                                    }
-                                >
-                                    Learn More
-                                    <svg
-                                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                                        aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 14 10"
-                                    >
-                                        <path
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M1 5h12m0 0L9 1m4 4L9 9"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        {/* Card 4 */}
-                        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img className="rounded-t-lg" src={Image} alt="Customer Support System" />
-                            </a>
-                            <div className="p-5">
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                                Products 4
-                                </h5>
-                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis hac eros nec ligula dolor nibh nibh. Fermentum conubia purus placerat penatibus ornare fermentum ante. Fringilla massa varius felis feugiat montes. Habitant sapien mauris                                </p>
-                                <button
-                                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                    onClick={() =>
-                                        handleOpenPopup(
-                                            Image,
-                                            'Customer Support System',
-                                            'Deliver exceptional customer service with advanced ticketing solutions.'
                                         )
                                     }
                                 >

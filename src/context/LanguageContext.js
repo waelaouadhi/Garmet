@@ -9,7 +9,7 @@ const translations = {
     welcome: "Welcome to our website",
     contact: "Contact",
     demoProduct: "Get Demo",
-    toggleLanguage: "Switch to French",
+   
     heroTitle: "Empowering Industries with Cutting-Edge Electrical Solutions.",
     heroDescription: "We are a dedicated team delivering innovative electrical solutions and high-performance components. GARMET ensures reliable systems with live motherboard diagnostics and expert maintenance.",
     learnMore: "Learn More",
@@ -22,13 +22,13 @@ const translations = {
     welcome: "Bienvenue sur notre site",
     contact: "Contact",
     demoProduct: "Obtenir une démo",
-    toggleLanguage: "Passer à l'anglais",
+  
     heroTitle: "Renforcer les industries avec des solutions électriques de pointe.",
-    heroDescription: "Nous sommes une équipe dédiée à la fourniture de solutions électriques innovantes et de composants haute performance. GARMET garantit des systèmes fiables avec des diagnostics en direct des cartes mères et une maintenance experte.",
+    heroDescription: "Chez GARMET, nous proposons une gamme complète de services spécialisés en maintenance industrielle pour garantir la performance et la durabilité de vos équipements. Découvrez ci-dessous nos principales prestations .",
     learnMore: "En savoir plus",
     introTitle: "Bienvenue chez GARMET",
-    introParagraph1: "Nous sommes une équipe dédiée à la fourniture de solutions électriques innovantes et de composants haute performance.",
-    introParagraph2: "GRAMMET garantit des systèmes fiables avec des diagnostics en direct des cartes mères et une maintenance experte pour propulser votre entreprise.",
+    introParagraph1: "Chez GARMET, nous considérons chaque client comme un véritable partenaire. Spécialisés dans la maintenance électronique industrielle, nous offrons des services sur-mesure pour garantir la performance et la durabilité de vos équipements. ",
+    introParagraph2: "Nous réparons et entretenons une large gamme d’équipements électroniques industriels, tels que cartes de commande, cartes de puissance, drivers pour moteurs pas à pas, automates programmables industriels, onduleurs ASI, servo drives, variateurs de vitesse, et bien plus encore.Notre engagement va au-delà de la simple maintenance : nous vous apportons également des conseils techniques adaptés à vos besoins spécifiques, ainsi qu’un support technique réactif et personnalisé. Grâce à notre expertise, nous vous aidons à optimiser vos installations tout en assurant leur bon fonctionnement.Avec GARMET, vous bénéficiez d’une collaboration basée sur la fiabilité, l'innovation et un service de proximité, faisant de nous un partenaire stratégique pour la réussite de vos projets industriels.",
     contactUs: "Contactez-nous",
   }
 };
